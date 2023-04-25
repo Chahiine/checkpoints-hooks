@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-list {
+    margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px) {
+  .movie-list {
+    gap: 10px;
+  }
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter .icon {
+  flex: 1;
+  margin-right: 10px;
 }
+
+.filter .rating-stars {
+  flex: 1;
+}
+.movie-card {
+  width: 300px;
+  margin: 10px;
+}
+
+.movie-card .image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-card .content {
+  padding: 10px;
+}
+
+.movie-card .header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-card .meta {
+  font-size: 14px;
+  color: #999;
+}
+
+.movie-card .description {
+  font-size: 14px;
+}
+
+.movie-card .extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* App.css */
+.app-container {
+  display: flex;
+}
+
+.filter-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.movie-list-container {
+  flex: 2;
+  padding: 20px;
+}
+
+
+
+
