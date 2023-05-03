@@ -4,6 +4,7 @@ import { Navbar, Container, Button, Modal } from "react-bootstrap";
 import "./Filter.css";
 import { v4 as uuidv4 } from "uuid";
 
+
 const Filter = ({ setFilterTitle, setFilterRating, setMovies, movies }) => {
   const ratingChanged = (newRating) => {
     setFilterRating(newRating);
